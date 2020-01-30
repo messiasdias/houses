@@ -1,0 +1,84 @@
+@import "variables";
+
+*{
+    margin:0;
+    padding: 0;
+
+}
+
+#app{
+    width: 100vw;
+    min-height: 100vh;
+    padding: 20px; 
+    box-sizing: border-box !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    //start .container
+    .container{
+        width: calc( 100% - 40px) ;
+        box-shadow: -4px 5px 10px $black2;
+        background-size: cover;
+        background-attachment: fixed;
+        border-radius: 3px;
+
+
+        .top, .center, .bottom {
+            border: solid 1px $white;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+
+         //start .top
+        .top{
+            height: 100px; 
+            color: $white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+    
+            .brand{
+             
+            }
+    
+    
+            .menu{
+                list-style: none;
+                
+                li{
+                    display: inline;
+                    margin: 5px ;
+                }
+            }
+    
+        }
+         //end .top
+
+
+
+         //start .center
+        .center{
+            min-height: 400px; 
+        }
+         //end .center
+
+
+
+        //start .bottom
+        .bottom{
+            min-height: 100px; 
+        }
+        //end .bottom
+
+
+    }
+    //end .container
+
+
+ 
+}
