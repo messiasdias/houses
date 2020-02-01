@@ -1,6 +1,7 @@
 <template>
     <div id="app"  >
-        <div class="container" :style="{ backgroundImage:`url('assets/img/${bgImage}')` }" > 
+        <div class="container" :style="{ backgroundImage:`url('assets/img/house${pageIndex}.jpg')` }" > 
+            <div class="overlay" ></div>  
             <Top/>
             <Center/>
             <Bottom/>
@@ -23,9 +24,22 @@ export default{
     },
     computed:{
         ...mapState({
-            bgImage: 'bgImage'
+            pageIndex: 'pageIndex',
+            menuVisible: 'menuVisible',
         })
-    }
+    },
+    mounted: function() {
+        
+        //setInterval( () => {  this.$store.commit('pageIndex', 1  ) }, 10000 )
+
+        if(screen.width > 768){
+            this.$store.commit('menu', true)
+        }else{
+             this.$store.commit('menu', false)
+        }
+    },
+
+    
 }
 
 </script>

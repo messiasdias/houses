@@ -1,30 +1,52 @@
 <template>
-    <div class="top"  >
+    <div class="top" >
      
-            <h1 class="brand" > Houses</h1>
+            <h1 class="brand" > <a href="/">Houses</a></h1>
+          
+     
+            <ul class="menu"  :style="menuVisible"   >
 
-            <ul class="menu" >
+                <font-awesome-icon class="menu-close"  @click="$store.commit('menu', false)" icon="times" /> 
 
-                <li> About us </li>
-                <li> Projects </li>
-                <li> News </li>
-                <li> Contact us </li>
+                <li class="item" > About us </li>
+                <li class="item active" > Projects </li>
+                <li class="item" > News </li>
+                <li class="item" > Contact us </li>
                 <li class="icons" > 
-
+                   <font-awesome-icon icon="user" /> 
                    <font-awesome-icon icon="search" />
-                   <font-awesome-icon icon="user" />
-
                  </li>
 
             </ul>
+
+    
+
+             <font-awesome-icon class="menu-open" icon="bars" @click.prevent="$store.commit('menu', true)" /> 
+
+            
 
     </div>
 </template>
 
 <script>
+import {mapState} from 'vuex'
 
 export default{
     name: 'Top',
+    computed: {
+        ...mapState({
+            menuVisible: 'menuVisible',
+            screen:'screen'
+        })
+    },
+    mouted:function(){
+
+    },
+    methods:{
+
+
+    }
+    
 }
 
 </script>
