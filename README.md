@@ -1,8 +1,12 @@
-# houses
+# Houses | UI Design Inspiration
 
 ## Demo
 
 [messiasdias.github.io/houses](https://messiasdias.github.io/houses/)
+
+![messiasdias/houses](public/img/screenshot.png)
+
+
 
 ## Project setup
 ```
@@ -11,7 +15,7 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run dev
 ```
 
 ### Compiles and minifies for production
@@ -19,15 +23,10 @@ npm run serve
 npm run build
 ```
 
-### Run your unit tests
-```
-npm run test:unit
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Original Version
+> Landing Page by [Vladimir Biondic](https://collectui.com/designers/Biondic)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<img width="300" src="public/img/houses-ui-large.jpeg" />
+
+

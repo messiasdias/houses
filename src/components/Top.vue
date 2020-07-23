@@ -5,13 +5,12 @@
           
      
             <ul class="menu"  :style="menuVisible"   >
-
                 <font-awesome-icon class="menu-close"  @click="$store.commit('menu', false)" icon="times" /> 
-
-                <li class="item" > About us </li>
-                <li class="item active" > Projects </li>
-                <li class="item" > News </li>
-                <li class="item" > Contact us </li>
+                
+                <li class="item" >About us</li>
+                <li class="item active" >Projects</li>
+                <li class="item" >News</li>
+                <li class="item" >Contact us</li>
                 <li class="icons" > 
                    <font-awesome-icon icon="user" /> 
                    <font-awesome-icon icon="search" />
