@@ -1,6 +1,6 @@
 <template>
     <div id="app"  >
-        <div class="container" :style="{ backgroundImage:`url('assets/img/house${pageIndex}.jpg')` }" > 
+        <div class="container" :style="{ backgroundImage:`url('img/house${pageIndex}.jpg')` }" > 
             <div class="overlay" ></div>  
             <Top/>
             <Center/>
